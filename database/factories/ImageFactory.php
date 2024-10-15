@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Image;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -16,12 +15,11 @@ class ImageFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    protected $model = Image::class;
     public function definition(): array
     {
         return [
-            'product_id' => Product::factory(),
-            'name' => $this->faker->imageUrl,
+            'name' => fake()->image(),
+            'product_id' => Product::query()->get()->random()->id,
         ];
     }
 }

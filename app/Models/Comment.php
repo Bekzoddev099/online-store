@@ -7,13 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
+    /** @use HasFactory<\Database\Factories\CommentFactory> */
     use HasFactory;
-    protected $table = 'comments';
-
-    protected $fillable = [
-        'text',
-        'author',
-        'user_id',
-        'product_id'
-    ];
 }

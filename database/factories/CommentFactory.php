@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Comment;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -17,14 +16,12 @@ class CommentFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    protected $model = Comment::class;
     public function definition(): array
     {
         return [
-            'text' => $this->faker->sentence(),
-            'author' => $this->faker->name(),
-            'user_id' => $this->faker->numberBetween(1, 10),
-            'product_id' => $this->faker->numberBetween(1, 10),
+            'text' => fake()->realText(),
+            'user_id' => User::query()->get()->random()->id,
+            'product_id' => Product::query()->get()->random()->id,
         ];
     }
 }

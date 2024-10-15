@@ -3,7 +3,6 @@
 namespace Database\Factories;
 
 use App\Models\Category;
-use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,16 +15,13 @@ class ProductFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    protected $model = Product::class;
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word(),
-            'description' => $this->faker->paragraph(),
-            'price' => $this->faker->numberBetween(100, 10000),
-            'image' => $this->faker->numberBetween(1, 10),
-            'comments' => $this->faker->sentence(),
-            'category_id' => $this->faker->numberBetween(1, 5),
+            'name' => fake()->sentence(2),
+            'description' => fake()->sentence(),
+            'price' => fake()->randomFloat(2, 1, 10000),
+            'category_id' => Category::query()->get()->random()->id,
         ];
     }
 }

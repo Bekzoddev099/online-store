@@ -7,11 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
+    /** @use HasFactory<\Database\Factories\ImageFactory> */
     use HasFactory;
-    protected $table = 'images';
-
-    protected $fillable = [
-        'name',
-        'product_id',
-    ];
 }

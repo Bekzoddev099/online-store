@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Cart;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -17,13 +16,11 @@ class CartFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    protected $model = Cart::class;
     public function definition(): array
     {
         return [
-            'product_id' => $this->faker->numberBetween(1, 10),
-            'user_id' => $this->faker->numberBetween(1, 10),
-            'count' => $this->faker->numberBetween(1, 5),
+            'product_id' => Product::query()->get()->random()->id,
+            'user_id' => User::query()->get()->random()->id,
         ];
     }
 }
