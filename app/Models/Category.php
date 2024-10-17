@@ -9,4 +9,14 @@ class Category extends Model
 {
     /** @use HasFactory<\Database\Factories\CategoryFactory> */
     use HasFactory;
+<<<<<<< HEAD
+=======
+
+    protected $fillable = [
+        'name',
+        'description',
+        'image',
+        'parent'
+    ];
+>>>>>>> 36a8d4d (add phpunit)
 }

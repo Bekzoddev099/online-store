@@ -15,12 +15,21 @@ class CategoryResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+<<<<<<< HEAD
             'id' => $this->id,
             'name' => $this->name,
             'description' => $this->description,
             'image' => $this->image,
             'parent' => $this->parent,
             'created_at' => $this->created_at
+=======
+            'id'          => $this->id,
+            'name'        => $this->name,
+            'description' => $this->description,
+            'image'       => $this->image,
+            'parent'      => $this->parent,
+            'created_at'  => $this->created_at
+>>>>>>> 36a8d4d (add phpunit)
         ];
     }
 }
