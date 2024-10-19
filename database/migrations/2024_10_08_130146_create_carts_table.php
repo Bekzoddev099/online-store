@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('carts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')
+<<<<<<< HEAD
                 ->constrained('products')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
@@ -21,6 +22,15 @@ return new class extends Migration
                 ->constrained('users')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
+=======
+                  ->constrained('products')
+                  ->onDelete('cascade')
+                  ->onUpdate('cascade');
+            $table->foreignId('user_id')
+                  ->constrained('users')
+                  ->onDelete('cascade')
+                  ->onUpdate('cascade');
+>>>>>>> 1814561 (first commit)
             $table->timestamps();
         });
     }

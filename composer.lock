@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "73d3f094f884c69951de7f212f376af7",
+=======
+    "content-hash": "0ff606653e194f12aa75460c1e08eff7",
+>>>>>>> 1814561 (first commit)
     "packages": [
         {
             "name": "brick/math",
@@ -5675,6 +5679,7 @@
     ],
     "packages-dev": [
         {
+<<<<<<< HEAD
             "name": "brianium/paratest",
             "version": "v7.5.7",
             "source": {
@@ -5816,6 +5821,8 @@
             "time": "2024-01-30T19:34:25+00:00"
         },
         {
+=======
+>>>>>>> 1814561 (first commit)
             "name": "fakerphp/faker",
             "version": "v1.23.1",
             "source": {
@@ -5879,6 +5886,7 @@
             "time": "2024-01-02T13:46:09+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "fidry/cpu-core-counter",
             "version": "1.2.0",
             "source": {
@@ -5940,6 +5948,8 @@
             "time": "2024-08-06T10:04:20+00:00"
         },
         {
+=======
+>>>>>>> 1814561 (first commit)
             "name": "filp/whoops",
             "version": "2.16.0",
             "source": {
@@ -6062,6 +6072,7 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "jean85/pretty-package-versions",
             "version": "2.0.6",
             "source": {
@@ -6121,6 +6132,8 @@
             "time": "2024-03-08T09:58:59+00:00"
         },
         {
+=======
+>>>>>>> 1814561 (first commit)
             "name": "laravel/pint",
             "version": "v1.18.1",
             "source": {
@@ -6490,6 +6503,7 @@
             "time": "2024-08-03T15:32:23+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "pestphp/pest",
             "version": "v3.3.0",
             "source": {
@@ -6813,6 +6827,8 @@
             "time": "2024-09-22T07:54:40+00:00"
         },
         {
+=======
+>>>>>>> 1814561 (first commit)
             "name": "phar-io/manifest",
             "version": "2.0.4",
             "source": {
@@ -6931,6 +6947,7 @@
             "time": "2022-02-21T01:04:05+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "phpdocumentor/reflection-common",
             "version": "2.2.0",
             "source": {
@@ -7153,6 +7170,8 @@
             "time": "2024-10-13T11:25:22+00:00"
         },
         {
+=======
+>>>>>>> 1814561 (first commit)
             "name": "phpunit/php-code-coverage",
             "version": "11.0.6",
             "source": {
@@ -8570,6 +8589,7 @@
             "time": "2024-09-17T12:49:58+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "ta-tikoma/phpunit-architecture-test",
             "version": "0.8.4",
             "source": {
@@ -8629,6 +8649,8 @@
             "time": "2024-01-05T14:10:56+00:00"
         },
         {
+=======
+>>>>>>> 1814561 (first commit)
             "name": "theseer/tokenizer",
             "version": "1.2.3",
             "source": {
@@ -8681,12 +8703,20 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
+<<<<<<< HEAD
     "stability-flags": [],
+=======
+    "stability-flags": {},
+>>>>>>> 1814561 (first commit)
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.3"
     },
+<<<<<<< HEAD
     "platform-dev": [],
+=======
+    "platform-dev": {},
+>>>>>>> 1814561 (first commit)
     "plugin-api-version": "2.6.0"
 }

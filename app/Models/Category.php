@@ -9,6 +9,7 @@ class Category extends Model
 {
     /** @use HasFactory<\Database\Factories\CategoryFactory> */
     use HasFactory;
+<<<<<<< HEAD
 
     protected $fillable = [
         'name',
@@ -16,4 +17,6 @@ class Category extends Model
         'image',
         'parent'
     ];
+=======
+>>>>>>> 1814561 (first commit)
 }
