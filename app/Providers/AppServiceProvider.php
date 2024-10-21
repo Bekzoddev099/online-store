@@ -11,12 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-<<<<<<< HEAD
-        $dfs   = 'mk;m';
-        $fsmfk = 'fkkdsmf';
-=======
         //
->>>>>>> 1814561 (first commit)
     }
 
     /**

@@ -2,10 +2,11 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
  */
 class CategoryFactory extends Factory
 {
@@ -14,12 +15,14 @@ class CategoryFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
+
+    public function definition()
     {
         return [
-            'name' => fake()->word(),
-            'description' => fake()->text(20),
-            'image' => fake()->imageUrl(),
+            'name' => $this->faker->word(),
+            'description' => $this->faker->sentence(),
+            'parent_id' => Category::query()->inRandomOrder()->first()?->id,
         ];
     }
+
 }

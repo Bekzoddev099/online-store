@@ -4,19 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
 class Category extends Model
 {
-    /** @use HasFactory<\Database\Factories\CategoryFactory> */
-    use HasFactory;
-<<<<<<< HEAD
+    use HasFactory, Notifiable, HasApiTokens;
 
     protected $fillable = [
         'name',
-        'description',
-        'image',
-        'parent'
+        'print_id',
     ];
-=======
->>>>>>> 1814561 (first commit)
+
 }

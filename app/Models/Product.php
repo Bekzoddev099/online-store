@@ -4,21 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-=======
->>>>>>> 1814561 (first commit)
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
 class Product extends Model
 {
-    /** @use HasFactory<\Database\Factories\ProductFactory> */
-    use HasFactory;
-<<<<<<< HEAD
-
-    public function category()
+    use HasFactory, Notifiable, HasApiTokens;
+    protected $fillable = [
+        'name',
+        'category_id',
+        'description',
+        'price',
+    ];
+    public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Category::class);
     }
-=======
->>>>>>> 1814561 (first commit)
 }

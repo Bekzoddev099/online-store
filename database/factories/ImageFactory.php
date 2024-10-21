@@ -18,8 +18,8 @@ class ImageFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->image(),
-            'product_id' => Product::query()->get()->random()->id,
+            'product_id'=>Product::factory(),
+            'name'=>$this->faker->word()
         ];
     }
 }

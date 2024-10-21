@@ -19,8 +19,8 @@ class CartFactory extends Factory
     public function definition(): array
     {
         return [
-            'product_id' => Product::query()->get()->random()->id,
-            'user_id' => User::query()->get()->random()->id,
+            'user_id' => User::factory(),
+            'product_id'=>Product::factory()
         ];
     }
 }
